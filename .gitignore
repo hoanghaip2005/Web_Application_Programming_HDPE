@@ -1,0 +1,13 @@
+node_modules
+dist
+.env
+.DS_Store
+coverage
+frontend/.env
+backend/.env
+backend/.knex
+backend/certs
+output
+npm-debug.log*
+specs
+.playwright-cli

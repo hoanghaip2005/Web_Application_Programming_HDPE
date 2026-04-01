@@ -1,0 +1,28 @@
+{
+  "name": "hdpe-backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon --legacy-watch --watch src --ext js,mjs,cjs,json src/server.js",
+    "start": "node src/server.js",
+    "build": "node -e \"console.log('backend build step not required')\"",
+    "migrate": "knex migrate:latest --knexfile knexfile.cjs",
+    "seed": "knex seed:run --knexfile knexfile.cjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.13.1",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
